@@ -3,7 +3,7 @@
 # change permissions on this file: chmod +x waiting.rb
 # set an alias to this file as well
 require 'yaml'
-file = '/Users/julio/Dropbox/waiting.txt' # set path to a Dropbox file for syncronized folders/files across computers
+file = 'waiting.txt' # set path to a Dropbox file for syncronized folders/files across computers
 
 ### methods ###
 def wait_file_exists(file)
