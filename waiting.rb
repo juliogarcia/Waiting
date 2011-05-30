@@ -3,7 +3,7 @@
 # change permissions on this file: chmod +x waiting.rb
 # set an alias to this file as well
 require 'yaml'
-file = 'waiting.txt' # set path to a Dropbox file for syncronized folders/files across computers
+file = 'waiting.txt' # tip: set path to a Dropbox file for syncronized file across computers
 
 ### methods ###
 def wait_file_exists(file)
@@ -130,6 +130,11 @@ end
 
 ### control ###
 if ARGV[0] == 'status' || ARGV.count == 0
+	puts 'Waiting -  Copyright (C) 2011 Julio Garcia'
+    puts 'This program comes with ABSOLUTELY NO WARRANTY;'
+    puts 'This is free software, and you are welcome to redistribute it'
+    puts 'under certain conditions;'
+	puts ' '
     if wait_file_exists(file) == false
         puts 'You have not entered any information on anyone or anything'
     else
@@ -176,9 +181,19 @@ elsif ARGV[0] == 'delete'
 		end
 	end
 elsif ARGV[0] == 'version' || ARGV[0] == '-v'
-	puts 'version 0.0.1'
-	puts 'released June 1, 2011'
-	puts 'Author: Julio Garcia (@juliogarcia)'
+	puts 'Waiting 0.1 -  Copyright (C) 2011 Julio Garcia'
+    puts 'This program comes with ABSOLUTELY NO WARRANTY;'
+    puts 'This is free software, and you are welcome to redistribute it'
+    puts 'under certain conditions;'
+elsif ARGV[0] == 'options'
+	puts 'To start tracking someone, type: for <name> to "<action>"'
+	puts '- keep <action> in quotes, <name> should be in quotes for multiple people'
+	puts 'ex. ./waiting.rb for Julio to "finish writing his README"'
+	puts ''
+	puts 'To delete, type: delete <id>'
+	puts 'ex. ./waiting.rb delete 392'
+	puts ''
+	puts 'To view status of what you\'re waiting on, simply type: status'
 else
     puts 'error'
 end

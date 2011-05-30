@@ -1,0 +1,48 @@
+License
+-------
+Waiting - Command line tool to track who or what you are waiting on
+Copyright (C) 2011  Julio Garcia
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+
+Overview
+--------
+Waiting is a command line tool to track who or what you are waiting on
+or keeping you from completing a task. The data you submit is stored in
+a plain text file in YAML format.
+
+I created this tool because I am often waiting on others to complete
+something before I can move forward. While there are to-do or reminder
+apps, I needed something like this to track people blocking me from 
+finishing projects, or people I needed a reply/response from.
+
+Documentation
+-------------
+to start tracking someone, type: for <name> to "<action>" 
+- keep <action> in quotes, <name> should be in quotes for multiple people
+ex. ./waiting.rb for Julio to "finish writing his README"
+
+to delete, type: delete <id>
+ex. ./waiting.rb delete 392
+
+to view status of what you're waiting on, simply type: status
+
+Bug Reporting
+-------------
+Please post any and all issues on GitHub at the following URL
+https://github.com/juliogarcia/waiting/issues
+
+You may also contact me via Twitter, @juliogarcia
+or via email, julio@juliogarcia.org
